@@ -16,7 +16,7 @@
     width: 110px;
     min-width: 0;
     background-color: #1b5385;
-    color: white;
+    color: #ffff;
     font-family: monospace;
     font-size: 13px;
 }
@@ -45,22 +45,20 @@
     flex: 1;
 }
 
-/* Common Styles */
 .content,
 .content1,
 .content2 {
-    color: white;
+    color: #ffff;
     font: 100 24px/100px sans-serif;
     height: 150px;
     width: 897px;
     text-align: center;
 }
 
-/* Common Styles */
 .content,
 .content1,
 .content2 {
-    color: white;
+    color: #ffff;
     font: 100 24px/100px sans-serif;
     height: 190px;
     width: 897px;
@@ -75,15 +73,15 @@
 }
 
 .red {
-    background: orangered;
+    background: #ff4500;
 }
 
 .green {
-    background: yellowgreen;
+    background: #90ee90;
 }
 
 .blue {
-    background: steelblue;
+    background: #4682b4;
 }
 
 .content {
@@ -127,23 +125,23 @@ div>div {
 }
 
 .box2 {
-    background-color: lightblue;
+    background-color: #ADD8E6;
 }
 
 .box3 {
-    background-color: yellow;
+    background-color: #ffff00;
 }
 
 .box4 {
-    background-color: brown;
+    background-color: #a52a2a;
 }
 
 .box5 {
-    background-color: lightgreen;
+    background-color: #90ee90;
 }
 
 .box6 {
-    background-color: brown;
+    background-color: #a52a2a;
 }
 
 #container {
@@ -169,16 +167,16 @@ div>div {
 }
 
 #item1 {
-    background-color: lime;
+    background-color: #00ff00;
     grid-area: 2 / 2 / auto / span 3;
 }
 
 #item2 {
-    background-color: yellow;
+    background-color: #ffff00;
 }
 
 #item3 {
-    background-color: blue;
+    background-color: #0000ff;
 }
 
 #autoflow-grid {
@@ -188,29 +186,28 @@ div>div {
     gap: 10px;
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     grid-auto-flow: column;
-    /* row, row dense, column, column dense */
 }
 
 #jbvitem1 {
-    background-color: lime;
+    background-color: #00ff00;
     grid-row-start: 3;
 }
 
 #sb-item2 {
-    background-color: yellow;
+    background-color: #ffff00;
 }
 
 #nk-item3 {
-    background-color: blue;
+    background-color: #0000ff;
 }
 
 #dk-item4 {
     grid-column-start: 2;
-    background-color: red;
+    background-color: #ff0000;
 }
 
 #pk-item5 {
-    background-color: aqua;
+    background-color: #00ffff;
 }
 
 .layout-wrapper {
@@ -235,15 +232,42 @@ div>div {
     inline-size: min-content;
 
 }
-.text-wrapper p>p{
-     border: 4px solid #f76707;
-  border-radius: 5px;
-  padding: 10px;
-  inline-size: 150px;
-  overflow-wrap: break-word
+
+.text-wrapper p>p {
+    border: 4px solid #f76707;
+    border-radius: 5px;
+    padding: 10px;
+    inline-size: 150px;
+    overflow-wrap: break-word
 }
 
 .example {
-  text-align: justify;
-  border: solid;
+    text-align: justify;
+    border: solid;
+}
+
+.example-1 {
+    font-size: 1.4em;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.example-2 {
+    font-size: 1.4em;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.example-3 {
+    font-size: 1.4em;
+    text-align: justify;
+    text-align-last: right;
+}
+
+p .para-1 {
+    max-width: 60ch;
+}
+
+.balanced {
+    text-wrap-style: balance;
 }
